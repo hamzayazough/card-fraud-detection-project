@@ -1,0 +1,228 @@
+.body {
+    font-family: 'Poppins', sans-serif;
+    background: linear-gradient(135deg, #e0c3fc, #8ec5fc);
+    height: 100vh;
+  }
+  
+  .validation-container {
+    max-width: 50%;
+    margin: 50px auto;
+    padding: 30px 20px;
+    text-align: center;
+    background-color: #ffffff;
+    border-radius: 15px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+    position: relative;
+
+  }
+  
+  .card-image {
+    margin-bottom: 20px;
+    height: 50px;
+  }
+  
+  .card-image img {
+    width: 100px;
+  }
+  
+  .validation-container h1 {
+    font-size: 32px;
+    color: #2d2d2d;
+    margin-bottom: 10px;
+  }
+  
+  .validation-container p {
+    font-size: 16px;
+    color: #555;
+    margin-bottom: 30px;
+  }
+  
+  .card-form {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+  }
+  
+  .form-group {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 5px;
+  }
+  
+  .form-group label {
+    font-size: 14px;
+    font-weight: bold;
+    color: #2d2d2d;
+  }
+  
+  .form-group input {
+    width: 95%;
+    padding: 12px;
+    font-size: 14px;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    outline: none;
+    transition: border-color 0.3s;
+  }
+  
+  .form-group input:focus {
+    border-color: #9370db;
+  }
+  
+  /* Verify Button */
+  .verify-btn {
+    background-color: #9370db;
+    color: white;
+    border: none;
+    padding: 14px 20px;
+    font-size: 16px;
+    font-weight: bold;
+    border-radius: 30px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    margin-top: 10px;
+  }
+  
+  .verify-btn:hover {
+    background-color: #5e60ce;
+  }
+  
+  /* Error Popup */
+  .error-popup {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .error-popup .popup-content {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 10px;
+    width: 90%;
+    max-width: 400px;
+    text-align: center;
+  }
+  
+  .error-popup h2 {
+    color: #ff4d4f;
+    font-size: 24px;
+    margin-bottom: 15px;
+  }
+  
+  .error-popup ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    color: #333;
+    text-align: left;
+  }
+  
+  .error-popup ul li {
+    margin-bottom: 10px;
+  }
+  
+  .error-popup .close-btn {
+    margin-top: 20px;
+    background-color: #9370db;
+    color: white;
+    border: none;
+    padding: 12px 25px;
+    border-radius: 25px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  .error-popup .close-btn:hover {
+    background-color: #5e60ce;
+  }
+  
+.loading-popup {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 1000;
+}
+
+.loading-content {
+  text-align: center;
+  background: white;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+}
+
+.spinner {
+  width: 50px;
+  height: 50px;
+  border: 6px solid rgba(0, 0, 0, 0.1);
+  border-top-color: #9370db;
+  border-radius: 50%;
+  animation: spin 1s linear infinite;
+  margin-bottom: 10px;
+}
+
+@keyframes spin {
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+/* Success Popup */
+.success-popup {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 1000;
+}
+
+.success-popup .popup-content {
+  text-align: center;
+  background: white;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+}
+
+.success-popup h2 {
+  color: #28a745; /* Green for success */
+  margin-bottom: 15px;
+}
+
+.success-popup p {
+  font-size: 16px;
+  margin-bottom: 20px;
+  color: #333;
+}
+
+.success-popup .close-btn {
+  background-color: #9370db;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.success-popup .close-btn:hover {
+  background-color: #5e60ce;
+}
